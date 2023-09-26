@@ -2,17 +2,17 @@ class student:
     roll = ""
     cgpa =""
 
-mehedi = student()
-korim = student()
+    def display(self):
+        print(f"roll:{self.roll},cgpa: {self.cgpa}")
+
 
 # print(isinstance(mehedi,student))
-
+mehedi = student()
 mehedi.roll= "324"
 mehedi.cgpa= "2.3"
-print(f"roll:{mehedi.roll},Cgpa: {mehedi.cgpa} ")
+mehedi.display()
 
-
+korim = student()
 korim.roll= "44"
 korim.cgpa= "4.3"
-print(f"roll:{korim.roll},Cgpa: {korim.cgpa} ")
-
+korim.display()
